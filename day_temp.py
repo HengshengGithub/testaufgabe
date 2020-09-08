@@ -80,7 +80,7 @@ def max_min_day(df):
         if coldest_20_T < T_min_20:
             T_min_20 = coldest_20_T
             
-            
+    # plot        
     x = [2015, 2016, 2017, 2018, 2019, '2020*']
     y1 = [T_max_15, T_max_16, T_max_17, T_max_18, T_max_19, T_max_20]
     y2 = [T_min_15, T_min_16, T_min_17, T_min_18, T_min_19, T_min_20]
