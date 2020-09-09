@@ -20,8 +20,8 @@ for k in range(0, (len(df['Wert'])*4-3), 4):
         # Using double for-loop here, so it run a litte slowly
         
 df['Wert'].interpolate(method='linear', limit_direction='forward', axis=0, inplace=True)    # Using linear interpolation for temperature
-df['Qualitaet_Niveau'].interpolate(method='nearest', limit_direction='forward', axis=0, inplace=True)   # Using nearest interpolation for temperature
-df['Qualitaet_Byte'].interpolate(method='nearest', limit_direction='forward', axis=0, inplace=True)     # Using nearest interpolation for temperature
+df['Qualitaet_Niveau'].interpolate(method='nearest', limit_direction='forward', axis=0, inplace=True)   # Using nearest interpolation for QN
+df['Qualitaet_Byte'].interpolate(method='nearest', limit_direction='forward', axis=0, inplace=True)     # Using nearest interpolation for QB
 
 df.to_csv('Temp_timesteps.csv')   # save csv file for new timesteps (with 15 min timesteps)
 
